@@ -1,4 +1,4 @@
-const url = "http://universities.hipolabs.com/search?country=Pakistan"
+const url = "https://universities.hipolabs.com/search?country=Pakistan"
 
 async function fetchuniversities(){
     try{
