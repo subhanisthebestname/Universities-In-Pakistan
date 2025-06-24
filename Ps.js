@@ -1,4 +1,5 @@
 const url = "http://universities.hipolabs.com/search?country=Pakistan"
+console.log("Script")
 
 async function fetchuniversities(){
     try{
@@ -7,15 +8,16 @@ async function fetchuniversities(){
     return data
     }catch(err){
         console.error(err)
+        console.log("Test")
     }
 }
 function createcard(university){
     return `
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21rem;">
             <div class="card-body">
             <h5 class="card-title">${university.name}</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="${university.web_pages[0]}" class="btn btn-primary">${university.domains[0]}</a>
+            <a href="${university.web_pages[0]}" class="btn btn-primary card-btn">${university.domains[0]}</a>
             </div>
         </div>
     `
@@ -71,11 +73,11 @@ async function search(){
             if(nameofuni === inpuniversity){
                 let div001 = document.createElement('div')
                 div001.innerHTML = `
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 21rem;">
                     <div class="card-body">
                     <h5 class="card-title">${university.name}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="${university.web_pages[0]}" class="btn btn-primary">${university.domains[0]}</a>
+                    <a href="${university.web_pages[0]}" class="btn btn-primary card-btn">${university.domains[0]}</a>
                     </div>
                 </div>
                 `

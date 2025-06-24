@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universities In Pakistan</title>
+    <title>Universities In United States</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
         .btn{
-            margin: 20px;
-
+          padding: 10px;
+          border-radius: 10px;
+          width: 350px;
+          background-color:blueviolet;
+          color: whitesmoke;
+          font-family: cursive;
+          margin-top: 5px;
+          display: block;
+        }
+        .btn:hover{
+          background-color:blanchedalmond;
+          color: black;
         }
         .card{
             margin: 10px;
@@ -16,36 +26,68 @@
             border: 2px solid green;
         }
         #px5{
-          border: 2px solid cyan;
+          /* border: 2px solid cyan; */
           margin: 10px;
-          border-radius: 20px;
+          /* border-radius: 20px; */
 
         }
         #searching{
-          color: red;
-          font-family:cursive;
+          color: blue;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+          margin-top: 40px;
+
         }
         #Universitydiv{
           margin: 10px;
+          width: 50%; /* Or any desired width */
+          margin: 0 auto;
+          margin-top: 30px;
         }
         #uni{
-          padding: 10px;
+          padding: 30px;
           width: 350px;
           border-radius: 10px;
           font-family: cursive;
-          background-color: aqua;
+          background-color: whitesmoke;
+          margin-bottom: 10px;
         }
         #search{
           padding: 10px;
           border-radius: 10px;
-          width: 150px;
+          width: 350px;
           background-color:blueviolet;
           color: whitesmoke;
           font-family: cursive;
+          margin-top: 5px;
+          display: block;
+
         }
         #search:hover{
           background-color:blanchedalmond;
           color: black;
+        }
+        #px6{
+          margin-top: 40px;
+          width: 50%; /* Or any desired width */
+          margin: 0 auto;
+        }
+        #container-card{
+          width: 50%;
+          margin: 0 auto;
+        }
+        .card-btn{
+          width: 150px;
+        }
+        #btn-note{
+          display: block;
+          width: 150px;
+          margin-left: 40px;
+          margin-right: 40px;
+}
+        .form-control
+        {
+          padding: 60px;
         }
     </style>
 </head>
@@ -93,11 +135,20 @@
         <textarea class="form-control" aria-label="With textarea"  id="note"></textarea>
         <button class="btn btn-primary btn-lg" id="btn-note">Save!</button>
       </div>
-      
+
+
+      <!-- TODO lIST -->
+
       <!--  -->
-      <div id="px5">
-        <button type="button" class="btn btn-primary btn-lg" id="btn" >Show Universities in Pakistan!</button>
-        <button type="button" class="btn btn-primary btn-lg" id="btn-delete" >Delete</button>
+      <div id="px6">
+        <h1 id="searching">Search University By Name</h1>
+        <div id="Universitydiv">
+          <input type="text" id="uni" placeholder="Universities in Pakistan..." />
+          <button id="search">Search</button>
+        <!--  -->
+          <button type="button" class="btn btn-primary btn-lg" id="btn" >Show Universities in Pakistan!</button>
+          <button type="button" class="btn btn-primary btn-lg" id="btn-delete" >Delete</button>
+        </div> 
 
         <!--  -->
         <div id="container-card">
@@ -109,19 +160,26 @@
               </div>
             </div> -->
         </div>
-      </div>
-      <!-- TODO lIST -->
-
-      <!--  -->
-      <div id="px6">
-        <h1 id="searching">Search University By Name</h1>
-        <div id="Universitydiv">
-          <input type="text" id="uni" placeholder="Universities in Pakistan..." />
-          <button id="search">Search</button>
-        </div> 
       </div>  
 
+      <!--  -->
+      <!-- <div id="px5">
+        <button type="button" class="btn btn-primary btn-lg" id="btn" >Show Universities in Pakistan!</button>
+        <button type="button" class="btn btn-primary btn-lg" id="btn-delete" >Delete</button> -->
 
+        <!--  -->
+        <!-- <div id="container-card"> -->
+          <!-- <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+
+      
     <script src="Ps.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
